@@ -1,63 +1,11 @@
-body {
-      margin: 0px;;
-      font-family: Arial, Helvetica, sans-serif;
-}
+@import "./global/global.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
 
-ul {
-      margin: 0px;
-      padding: 0px;
-      list-style: none;
-}
+@import "./global/header.css";
 
-a {
-      text-decoration: none;
-      color: #fff;
-}
+/* Utilidades */
+@import "./utilidades/componentes.css";
 
-.header-bg {
-      max-width: 100%;
-      background-color: #000;
-}
-
-.header {
-      display: flex;
-      flex-wrap: wrap;
-      box-sizing: border-box;
-      padding: 20px;
-      gap: 20px;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-}
-
-.header-menu {
-      display: flex;
-      gap: 40px;
-}
-
-.header li {
-      display: inline-block;
-      font-size: 1.125rem;
-}
-
-.header a {
-      padding: 10px 0px;
-      position: relative;
-}
-
-.header-menu a::after {
-      content: " ";
-      display: block;
-      height: 2px;
-      width: 0px;
-      background: #fff;
-      margin-top: 4px;
-      transition: 0.5s;
-      position: absolute;
-}
-
-.header-menu a:hover::after {
-      width: 100%;
-}
+/* Home */
+@import "./home/introducao.css";
