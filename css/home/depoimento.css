@@ -1,0 +1,43 @@
+.depoimento {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      background: var(--cor-p1);
+}
+
+.depoimento img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0px;
+}
+
+.depoimento-conteudo {
+      padding: 40px 40px 80px 80px;
+      align-self: end;
+}
+
+.depoimento-conteudo p {
+      max-width: 32ch;
+      font-family: "merriweather", serif;
+      font-style: italic;
+      font-weight: 900;
+      margin-bottom: 32px;
+      position: relative;
+}
+
+.depoimento-conteudo p::before {
+      content: " “ ";
+      font-size: 3.5rem;
+      color: var(--cor-p2);
+      position: absolute;
+      left: -45px;
+      top: -20px;
+}
+
+.depoimento-conteudo p::after {
+      content: " ” ";
+      font-size: 3.5rem;
+      color: var(--cor-p2);
+      position: absolute;
+      bottom: -45px;
+}
