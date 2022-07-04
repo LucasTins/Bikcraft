@@ -1,5 +1,6 @@
 .header-bg {
   background-color: var(--cor-12);
+  padding-bottom: 20px;
 }
 
 .header {
