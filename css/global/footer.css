@@ -1,0 +1,30 @@
+.footer-bg {
+  background-color: var(--cor-12);
+  padding: 40px 0px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 5fr 4fr;
+  gap: 40px;
+  
+}
+
+.footer h3 {
+  margin-bottom: 32px;
+}
+
+.footer a:hover {
+  color: var(--cor-0);
+}
+
+.footer-redes ul {
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.footer-copy {
+  grid-column: 1/-1;
+  margin-top: 32px;
+}
