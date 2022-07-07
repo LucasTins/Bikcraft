@@ -1,0 +1,81 @@
+.bicicletas-bg {
+  background-image: linear-gradient(to right, var(--cor-0) 20% , var(--cor-11)10%);
+}
+
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px 0;
+  gap: 40px;
+}
+
+.bicicletas-imagem {
+  display: grid;
+}
+
+.bicicletas-imagem img {
+  grid-area: 1/1;
+  place-self: end end;
+}
+
+.bicicletas-imagem span {
+  grid-area: 1/1;
+  color: var(--cor-0);
+  background-color: var(--cor-11);
+  padding: 8px 8px 8px 16px;
+  margin-top: 20px;
+  border-radius: 4px 0 0 4px;
+  place-self: start end;
+}
+
+.bicicletas-conteudo h2 {
+  margin-bottom: 20px;
+}
+
+.bicicletas-conteudo h2::before {
+  content: " ";
+  display: block;
+  width: 12px;
+  height: 6px;
+  background-color: var(--cor-p1);
+  margin-bottom: 4px;
+}
+
+.bicicletas-conteudo p {
+  margin-bottom: 32px;
+  max-width: 60ch;
+}
+
+.bicicletas-conteudo-lista {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.bicicletas-conteudo-lista li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bicicletas-conteudo-lista img {
+  margin-right: 8px;
+}
+
+.bicicletas-conteudo-lista a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  place-self: end;
+}
+
+.bicicletas-conteudo a::after {
+  content: " ";
+  display: block;
+  width: 18px;
+  height: 10px;
+  background: url(../../img/icones/seta.svg);
+}
+
+.bicicletas-conteudo a:hover::after {
+  transform: translate(10px)
+}
