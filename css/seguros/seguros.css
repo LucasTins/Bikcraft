@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 60px 0;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
 
 }
@@ -62,5 +62,77 @@
 .seguros-item span {
   display: block;
   text-align: end;
+}
 
-} 
+/*Seguros.html*/
+
+.vantagens-bg {
+  background-color: var(--cor-12);
+  padding: 120px 0;
+}
+
+.vantagens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 80px;
+}
+
+.vantagens h1 {
+  grid-column: 1/-1;
+  margin-bottom: 32px ;
+}
+
+.vantagens img,
+.vantagens h2 {
+  margin-bottom: 10px;
+}
+/*Perguntas Frequentes*/
+
+.perguntas-bg {
+  background-color: var(--cor-0);
+  padding: 120px 0;
+}
+
+.perguntas h1 {
+  margin-bottom: 60px;
+}
+
+.perguntas dl > div {
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.perguntas dl > div:nth-child(odd){
+  background-color: var(--cor-1);
+}
+
+.perguntas dt {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 8px;
+  margin-bottom: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.perguntas dd {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  max-width: 74ch;
+}
+
+.perguntas dt::before {
+  content: " ";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background: var(--cor-p1);
+}
+
+.perguntas dt::after {
+  content: " ";
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  background: url(../../img/icones/seta-abrir.svg);
+}
