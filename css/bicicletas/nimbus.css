@@ -1,0 +1,27 @@
+.nimbus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 40px;
+}
+
+.bicicleta-imagem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.bicicleta-imagem img {
+  min-width: 100%;
+  display: block;
+}
+
+.bicicleta-imagem img:first-child {
+  grid-column: 1 / -1;
+}
+
+.bicicleta-comprar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
