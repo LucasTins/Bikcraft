@@ -16,6 +16,11 @@
   color: var(--cor-p5);
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
   max-width: max-content;
+  border: none;
+}
+
+.col-2 {
+  grid-column: 1 / -1;
 }
 
 .botao:hover {
@@ -65,4 +70,13 @@
 
 .titulo p {
   margin-bottom: 4px;
+}
+/*Icones contato*/
+.contato-icon::before{
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -28px;
 }

@@ -1,0 +1,38 @@
+.contato-formulario {
+  background-color: var(--cor-0);
+  border-radius: 0 4px 4px 0;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.formulario label {
+  display: block;
+  font: 600 1rem/1.5 "poppins", sans-serif;
+  margin-bottom: 4px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="number"],
+.formulario textarea {
+  font: 400, 1rem/1.5 "roboto", sans-serif;
+  background-color: var(--cor-1);
+  border: 1px solid var(--cor-8);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+.formulario input[type="number"]:focus,
+.formulario textarea:focus {
+  outline: none;
+  border: 2px solid var(--cor-p1);
+  background-color: var(--cor-0);
+} 
